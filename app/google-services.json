@@ -1,0 +1,76 @@
+{
+  "project_info": {
+    "project_number": "249789743880",
+    "project_id": "learn-kotlin---a-to-z",
+    "storage_bucket": "learn-kotlin---a-to-z.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:249789743880:android:b241296ebec5abfaf8e2bd",
+        "android_client_info": {
+          "package_name": "com.sgtech.learnkotlin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "249789743880-8cqu0kt46srvs62a33e2ih4clctnuf23.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBWMd2JAUKDrsMQjTFoM5f08S1uKV0rsiU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "249789743880-8cqu0kt46srvs62a33e2ih4clctnuf23.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:249789743880:android:0f50dc27cac51002f8e2bd",
+        "android_client_info": {
+          "package_name": "com.sgtech.uploaddata"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "249789743880-4m9m7vpj13ai0kgmvqramn9h849quqrk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sgtech.uploaddata",
+            "certificate_hash": "cfe8495ad24d5c90fea0a02bf4f1e7debfa12daf"
+          }
+        },
+        {
+          "client_id": "249789743880-8cqu0kt46srvs62a33e2ih4clctnuf23.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBWMd2JAUKDrsMQjTFoM5f08S1uKV0rsiU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "249789743880-8cqu0kt46srvs62a33e2ih4clctnuf23.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

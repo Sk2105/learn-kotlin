@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Learn Kotlin</string>
+    <string name="example">Example</string>
+    <string name="you_re_offline">You\'re offline</string>
+    <string name="reload">Reload</string>
+    <string name="exit">Exit</string>
+    <string name="kotlin_introduction">Kotlin Introduction</string>
+    <string name="kotlin_syntax">Kotlin Syntax</string>
+    <string name="kotlin_output">Kotlin Output</string>
+    <string name="kotlin_comment">Kotlin Comments</string>
+    <string name="kotlin_variables">Kotlin Variables</string>
+    <string name="kotlin_data_types">Kotlin Data Types</string>
+    <string name="kotlin_string">Kotlin String</string>
+    <string name="kotlin_boolean">Kotlin Boolean</string>
+    <string name="kotlin_if_else">Kotlin If…Else</string>
+    <string name="kotlin_when">Kotlin When</string>
+    <string name="kotlin_while_loop">Kotlin While Loop</string>
+    <string name="kotlin_break_continue">Kotlin Break/Continue</string>
+    <string name="kotlin_array">Kotlin Array</string>
+    <string name="kotlin_for_loop">Kotlin For Loop</string>
+    <string name="kotlin_ranges">Kotlin Ranges</string>
+    <string name="kotlin_functions">Kotlin Functions</string>
+</resources>
