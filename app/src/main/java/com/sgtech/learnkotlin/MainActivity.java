@@ -6,7 +6,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 
-import com.google.android.gms.ads.MobileAds;
+
 
 import java.util.ArrayList;
 import java.util.Objects;
@@ -23,13 +23,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         addData();
         recyclerView = findViewById(R.id.recycler);
-        MobileAds.initialize(this);
         Objects.requireNonNull(getSupportActionBar()).setTitle("Learn Kotlin - A to Z Tutorial");
         setData();
     }
 
     private void setData() {
-
         fbRecycler = new FbRecycler(arraylist, this);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setHasFixedSize(true);

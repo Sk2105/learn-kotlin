@@ -18,16 +18,17 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.google.android.gms.ads.AdError;
-import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.FullScreenContentCallback;
 import com.google.android.gms.ads.LoadAdError;
+import com.google.android.gms.ads.MobileAds;
 import com.google.android.gms.ads.rewardedinterstitial.RewardedInterstitialAd;
 import com.google.android.gms.ads.rewardedinterstitial.RewardedInterstitialAdLoadCallback;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
+
 
 import java.util.Objects;
 
@@ -37,28 +38,25 @@ public class DashBoardActivity extends AppCompatActivity {
     int id;
     CardView card1, card2, card3;
     Dialog dialog;
+    AdView adview;
     AdRequest adRequest;
-    AdView adView;
     RewardedInterstitialAd ad;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dash_board);
-        adView = findViewById(R.id.adView);
+        MobileAds.initialize(this);
         adRequest = new AdRequest.Builder().build();
-        adView.loadAd(adRequest);
-        adView.setAdListener(new AdListener() {
-            @Override
-            public void onAdFailedToLoad(@NonNull LoadAdError loadAdError) {
-                super.onAdFailedToLoad(loadAdError);
-                onAdLoaded();
-            }
-        });
         id = getIntent().getIntExtra(KeyClass.FIRE_ID, 1);
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
         findId();
         reload();
+        loadBanner();
+    }
+
+    private void loadBanner() {
+        adview.loadAd(adRequest);
         new Handler().postDelayed(this::loadAd, 4000);
     }
 
@@ -92,6 +90,7 @@ public class DashBoardActivity extends AppCompatActivity {
         card1 = findViewById(R.id.card1);
         card2 = findViewById(R.id.card2);
         card3 = findViewById(R.id.card3);
+        adview = findViewById(R.id.adView);
     }
 
     private void loadData() {
@@ -157,8 +156,8 @@ public class DashBoardActivity extends AppCompatActivity {
 
     }
 
-    public void loadAd() {
-        RewardedInterstitialAd.load(this, KeyClass.ADMOB_REWARDED_ID, adRequest, new RewardedInterstitialAdLoadCallback() {
+    private void loadAd() {
+        RewardedInterstitialAd.load(this, KeyClass.REWARDED_ADS_ID, adRequest, new RewardedInterstitialAdLoadCallback() {
             @Override
             public void onAdFailedToLoad(@NonNull LoadAdError loadAdError) {
                 super.onAdFailedToLoad(loadAdError);
@@ -197,14 +196,16 @@ public class DashBoardActivity extends AppCompatActivity {
                 });
             }
         });
+
     }
 
     public void showAd() {
         if (ad != null) {
-            ad.show(this, rewardItem -> {
+            ad.show(DashBoardActivity.this, rewardItem -> {
 
             });
         }
+
 
     }
 

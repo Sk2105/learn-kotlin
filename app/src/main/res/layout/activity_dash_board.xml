@@ -9,36 +9,26 @@
     android:orientation="vertical"
     tools:context=".DashBoardActivity">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-
+    <LinearLayout style="@style/mwStyle">
 
         <TextView
             android:id="@+id/t1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            style="@style/mwStyle"
             android:layout_margin="5dp"
             android:padding="5dp"
             android:textColor="@color/black"
-            android:textSize="20sp"
-
-            />
+            android:textSize="20sp" />
 
         <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
             android:id="@+id/adView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
+            style="@style/mwStyle"
             ads:adSize="MEDIUM_RECTANGLE"
-            android:layout_gravity="center"
-            ads:adUnitId="ca-app-pub-3397903282571414/9996707386" />
+            ads:adUnitId="ca-app-pub-2602459603500864/1067141917" />
+
 
         <androidx.cardview.widget.CardView
             android:id="@+id/card1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            style="@style/mwStyle"
             android:layout_margin="5dp"
             android:visibility="gone"
             app:cardBackgroundColor="@color/white"
@@ -48,8 +38,7 @@
             app:cardUseCompatPadding="false">
 
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                style="@style/mwStyle"
                 android:orientation="horizontal">
 
                 <ImageView
@@ -58,14 +47,11 @@
                     android:src="@color/main_color" />
 
                 <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
+                    style="@style/mwStyle"
                     tools:ignore="WebViewLayout">
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        style="@style/mwStyle"
                         android:gravity="center"
                         android:text="@string/example"
                         android:textColor="@color/main_color"
@@ -81,8 +67,7 @@
 
                     <WebView
                         android:id="@+id/img1"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        style="@style/mwStyle"
                         android:layout_margin="10dp"
                         android:padding="5dp" />
 
@@ -95,8 +80,7 @@
 
         <TextView
             android:id="@+id/t2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            style="@style/mwStyle"
             android:layout_margin="5dp"
             android:padding="5dp"
             android:textColor="@color/black"
@@ -104,8 +88,7 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/card2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            style="@style/mwStyle"
             android:layout_margin="5dp"
             android:visibility="gone"
             app:cardBackgroundColor="@color/white"
@@ -115,8 +98,7 @@
             app:cardUseCompatPadding="false">
 
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                style="@style/mwStyle"
                 android:orientation="horizontal">
 
                 <ImageView
@@ -125,14 +107,12 @@
                     android:src="@color/main_color" />
 
                 <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
+                    style="@style/mwStyle"
+
                     tools:ignore="WebViewLayout">
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        style="@style/mwStyle"
                         android:gravity="center"
                         android:text="@string/example"
                         android:textColor="@color/main_color"
@@ -148,8 +128,7 @@
 
                     <WebView
                         android:id="@+id/img2"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        style="@style/mwStyle"
                         android:layout_margin="10dp"
                         android:padding="5dp" />
 
@@ -161,8 +140,7 @@
 
         <TextView
             android:id="@+id/t3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            style="@style/mwStyle"
             android:layout_margin="5dp"
             android:padding="5dp"
             android:textColor="@color/black"
@@ -170,8 +148,7 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/card3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            style="@style/mwStyle"
             android:layout_margin="5dp"
             android:visibility="gone"
             app:cardBackgroundColor="@color/white"
@@ -181,8 +158,7 @@
             app:cardUseCompatPadding="false">
 
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                style="@style/mwStyle"
                 android:orientation="horizontal">
 
                 <ImageView
@@ -191,14 +167,11 @@
                     android:src="@color/main_color" />
 
                 <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
+                    style="@style/mwStyle"
                     tools:ignore="WebViewLayout">
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        style="@style/mwStyle"
                         android:gravity="center"
                         android:text="@string/example"
                         android:textColor="@color/main_color"
@@ -212,8 +185,7 @@
 
                     <WebView
                         android:id="@+id/img3"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        style="@style/mwStyle"
                         android:layout_margin="10dp"
                         android:padding="5dp" />
 

@@ -10,6 +10,6 @@ public class KeyClass {
     public static final String FIRE_IMG2 = "img2";
     public static final String FIRE_IMG3 = "img3";
     public static final String FIRE_ID = "_id";
-    public static final String ADMOB_REWARDED_ID = "ca-app-pub-3397903282571414/3199206611";
+    public static final String REWARDED_ADS_ID = "ca-app-pub-2602459603500864/9716907683";
 
 }
